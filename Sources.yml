@@ -1,0 +1,17 @@
+---
+  sources:
+    -
+      title: "BAR Arabidopsis AGI -> Annotation"
+      description: "Most recent annotation for given AGI"
+      language: "en-ca"
+      sponsor_organization_name: "University of Toronto"
+      provider_name: "Nicholas Provart"
+      uri: "http://bar.utoronto.ca/webservices/agiToAnnot.php"
+      sources:
+        -
+          title: "TAIR"
+          description: "The Arabidopsis Information Resource"
+          language: "en-us"
+          sponsor_organization_name: "Phoenix Bioinformatics"
+          uri: "https://www.arabidopsis.org/"
+          sources: []
