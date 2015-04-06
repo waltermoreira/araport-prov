@@ -23,7 +23,8 @@ Objective: Provide resource-level provenance for ADAMA microservices and thier s
 * Alternates allow entities referring to the same thing to be specified as alternates of one another
 * Specializations allow one to refer to either revisions -or- to sub-sections of an entity. The latter will be a route we can use to tie prov records to the query made against a specific service.
 
-Prefixes and Namespaces
+## Prefixes and Namespaces
+
 * prov: The PROV ontology namespace
     * http://www.w3.org/ns/prov#
 * dcterms: Dublin Core terms
@@ -62,13 +63,16 @@ Prefixes and Namespaces
 * sponsor_email: Email address for responsible party (optional)
 * sources: List of contributing sources to the resource
 
+```
 {"title":"TAIR",
 "description":"The Arabidopsis Information Resource",
 "language":"en-us",
 "sponsor_organization_name":"Phoenix Bioinformatics",
 "uri":"https://www.arabidopsis.org/",
 "sources":[]}
+```
 
+```
 {"sources":[
     {"title":"BAR Arabidopsis AGI -> Annotation",
      "description":"Most recent annotation for given AGI",
@@ -83,7 +87,7 @@ Prefixes and Namespaces
          "sponsor_organization_name":"Phoenix Bioinformatics",
          "uri":"https://www.arabidopsis.org/",
          "sources":[]}]}]}
-
+```
 
 ## References
 
