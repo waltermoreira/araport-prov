@@ -99,3 +99,7 @@ Objective: Provide resource-level provenance for ADAMA microservices and thier s
 * http://dublincore.org/documents/2012/06/14/dcmi-terms/
 * https://provenance.ecs.soton.ac.uk/prov-template/
 * https://pythonhaven.wordpress.com/tag/pydot/
+
+## Prefixes
+
+The site http://prefix.cc runs a prefix lookup for the semantic web. One really handy resource we could use is this endpoint http://prefix.cc/context which provides a list of known registered namespaces.
