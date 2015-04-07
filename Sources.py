@@ -59,7 +59,7 @@ def example():
     # dcterms:language: Recommended best practice is to use a controlled vocabulary such as RFC 4646
     datasource1 = g.entity(ap['datasource1'], {'dcterms:title': "BAR Arabidopsis AGI -> Annotation", 'dcterms:description': "Most recent annotation for given AGI", 'dcterms:language':"en-US", 'aip:uri':"http://bar.utoronto.ca/webservices/agiToAnnot.php"})
     # Set up attribution to Nick
-    g.wasGeneratedBy(datasource1, nick)
+    g.wasAttributedTo(datasource1, nick)
 
     # TAIR, general
     # Agents
@@ -73,7 +73,7 @@ def example():
     g.actedOnBehalfOf(eva, phoenix)
     # Define source as Entity
     datasource2 = g.entity(ap['datasource2'], {'dcterms:title': "TAIR", 'dcterms:description': "The Arabidopsis Information Resource", 'dcterms:language':"en-US", 'aip:uri':"https://www.arabidopsis.org/" })
-    g.wasGeneratedBy(datasource2, eva)
+    g.wasAttributedTo(datasource2, eva)
 
     # In Sources.yml, these two sources are nested. Define that relationship here
     g.wasDerivedFrom(ap['datasource1'], ap['datasource2'])
