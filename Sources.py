@@ -4,6 +4,7 @@ from __future__ import (absolute_import, division, print_function,
 from prov.model import ProvDocument, Namespace, Literal, PROV, Identifier, ProvAgent
 import datetime
 import pydot, prov.dot
+import json
 
 def example():
 
@@ -124,7 +125,7 @@ def example():
     g.used(adama_microservice, datasource1, datetime.datetime.now())
 
     # Print prov_n
-    print(g.prov_n)
+    print(g.get_provn())
     # Print prov-json
     print(g.serialize())
     # Write out as a pretty picture
